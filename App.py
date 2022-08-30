@@ -9,7 +9,7 @@ import numpy as np
 import pickle
 import pandas as pd
 
-app = Flask(__name__,template_folder = 'templates')
+app = Flask(__name__)
 model = pickle.load(open('Model/Treemodel.pickle','rb'))
 
 @app.route('/', methods=['GET','POST'])
